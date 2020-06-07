@@ -20,9 +20,19 @@ if (process.env.NODE_ENV === 'production') {
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-const apiRoutes = require('./routes/api-routes');
-app.use(apiRoutes);
-;
+const auth = require('./routes/auth');
+const celebrities = require('./routes/celebrities');
+const favorites = require('./routes/favorites');
+const user = require('./routes/user');
+app.use(auth);
+app.use(celebrities);
+app.use(favorites);
+app.use(user);
+
+app.get("/test", (req, res) => {
+    res.send("message from backend");
+});
+
 app.listen(PORT, () => {
     console.log(`listening at http://localhost:${PORT}`);
 });

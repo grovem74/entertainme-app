@@ -1,3 +1,5 @@
 module.exports = {
-    Item: require('./Item')
+  User: require('./user'),
+  Celebrity: require('./celebrity'),
+  Favorite: require('./favorite')
 };

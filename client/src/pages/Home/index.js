@@ -75,7 +75,7 @@ const Home = (props) => {
       <Row>
         <Col s={3}>
           <div className="suggestions">
-            <h6 className="title center-align">SUGGESTIONS</h6>
+            <h6 className="home-title center-align">SUGGESTIONS</h6>
             <img
               src="https://www.emmys.com/sites/default/files/styles/marquee_main/public/marquees/cta-2020-40th-900x600.jpg?itok=PYFZdWI0"
               className="home-image"
@@ -125,7 +125,7 @@ const Home = (props) => {
 
         <Col s={3}>
           <div className="staff-picks">
-            <h6 className="title">STAFF PICKS</h6>
+            <h6 className="home-title">STAFF PICKS</h6>
             <ul className="default-text">
               <h6>MOVIES</h6>
               <li>Bad Boys For Life</li>

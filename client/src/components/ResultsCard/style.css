@@ -1,0 +1,58 @@
+.results-card {
+    padding: 1.5em;
+    margin-bottom: 6em;
+    box-shadow: .75em .3em .3em #222222;
+    border-radius: .75em;
+    background-color: #111111;
+    min-height: 31em;
+    max-height: 38em;
+    position: relative;
+    top: 2em;
+    right: .5em;
+    color: #bdbdbd;
+}
+
+.results-card-title {
+    position: relative;
+    bottom: 0.5em;
+    font-size: 2em;
+}
+
+.logo{
+    margin-right: 10px;
+    background-color: gray;
+}
+
+.favorite-added {
+    position: absolute;
+    width: 150%;
+    top: 2.25em;
+    left: -2.5em;
+    color: #cfb53b;
+    display: none;
+}
+
+.overview {
+    text-align: left;
+}
+
+.details {
+    margin-top: 5em;
+    padding-left: 1.5em;
+}
+
+.backdrop-image {
+    width: 300px;
+    height: 165px;
+    margin-left: 0.6em;
+}
+
+.overview {
+    position: relative;
+    bottom: 1.25em;
+    min-height: 12em;
+    max-height: 12em;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
