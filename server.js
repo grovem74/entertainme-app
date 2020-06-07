@@ -3,7 +3,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 const mongoose = require('mongoose');
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/mern_template';
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/entertainme';
 
 mongoose.connect(MONGODB_URI, {
     useNewUrlParser: true,
@@ -29,9 +29,9 @@ app.use(celebrities);
 app.use(favorites);
 app.use(user);
 
-app.get("/test", (req, res) => {
-    res.send("message from backend");
-});
+// app.get("/test", (req, res) => {
+//     res.send("message from backend");
+// });
 
 app.listen(PORT, () => {
     console.log(`listening at http://localhost:${PORT}`);

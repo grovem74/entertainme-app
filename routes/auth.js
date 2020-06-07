@@ -184,4 +184,8 @@ router.delete("/user/:userId", hasAuthorization, (req, res, next) => {
 //   }).select("name");
 // });
 
+router.get("/test", (req, res) => {
+  res.send("message from backend");
+});
+
 module.exports = router;
