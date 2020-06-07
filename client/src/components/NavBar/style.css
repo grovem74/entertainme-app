@@ -1,0 +1,15 @@
+.nav-bar {
+    border-bottom: 4px solid #bdbdbd;
+    height: 70px
+}
+
+.navbar-fixed {
+    margin-bottom: 20px;
+    
+}
+
+.brand-logo {
+    margin-left: 10px;
+    margin-top: 5px
+
+}

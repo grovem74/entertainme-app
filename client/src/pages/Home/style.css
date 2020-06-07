@@ -1,0 +1,70 @@
+ h5 {
+     font-size: 1.5em;
+ }
+
+ .default-text {
+     color: #bdbdbd;
+ }
+
+ .staff-picks {
+     margin-left: 50px;
+     padding: 10px;
+     text-align: center;
+     box-shadow: 10px 5px 5px #222222;
+     border-radius: 10px;
+     background-color: #111111
+ }
+
+ .middle-content {
+     margin-top: 20px;
+ }
+
+ .middle-title {
+     color: #cfb53b;
+     text-align: center;
+     font-size: 2em;
+ }
+
+ .title {
+     color: #cfb53b;
+     font-size: 1.25em;
+ }
+
+ .main-paragraph {
+     color: #bdbdbd;
+     text-align: center
+ }
+
+ .suggestions {
+     margin-right: 50px;
+     padding: 10px;
+     box-shadow: 10px 5px 5px #222222;
+     border-radius: 10px;
+     background-color: #111111
+ }
+
+ #home-message {
+     min-height: 20em;
+ }
+
+ .home-image {
+     margin-top: 15px;
+     width: 175px;
+     height: 115px;
+ }
+
+ .home-image-text {
+     color: #bdbdbd;
+     text-align: center;
+ }
+
+ #home-text1, #home-text2, #home-text3, #home-text4, #home-text5 {
+     text-align: left;
+     margin-left: 3em;
+     color: #bdbdbd;
+     font-size: 1.25em;
+ }
+
+ .main {
+     color: #cfb53b;
+ }

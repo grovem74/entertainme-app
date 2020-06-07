@@ -1,8 +1,18 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
 import axios from 'axios';
+import "materialize-css";
+import Home from "./pages/Home";
+import NavBar from "./components/NavBar";
+// import MoviePage from "./pages/Movies";
+// import Celebrities from "./pages/Celebrities";
+// import Profile from "./pages/Profile";
+import SiteFooter from "./components/SiteFooter";
 
-function App() {
+const App = () => {
+  const [token, setToken] = useState(null);
+  console.log({ token });
   useEffect(() => {
     axios.get('/test')
       .then(response => console.log(response))
@@ -13,9 +23,17 @@ function App() {
       .catch(err => console.log(err));
   });
   return (
-    <div className="App">
-      <h1>entertaineME</h1>
-    </div>
+    <Router>
+      <NavBar token={token} />
+      <Switch>
+        <Route exact path="/">
+          <Home
+            token={token}
+          />
+        </Route>
+      </Switch>
+      <SiteFooter />
+    </Router>
   );
 }
 
