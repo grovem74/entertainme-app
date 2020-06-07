@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
 import axios from 'axios';
@@ -6,7 +6,7 @@ import "materialize-css";
 import Home from "./pages/Home";
 import NavBar from "./components/NavBar";
 import MoviePage from "./pages/Movies";
-// import Celebrities from "./pages/Celebrities";
+import Celebrities from "./pages/Celebrities";
 // import Profile from "./pages/Profile";
 import SiteFooter from "./components/SiteFooter";
 import Login from "./pages/Login";
@@ -14,16 +14,6 @@ import Register from "./pages/Register";
 import Logout from "./pages/Login/Logout";
 
 const App = () => {
-  useEffect(() => {
-    // axios.get('/test')
-    //   .then(response => console.log(response))
-    //   .catch(err => console.log(err));
-
-    // axios.get('/all')
-    //   .then(response => console.log(response))
-    //   .catch(err => console.log(err));
-  });
-
   const [token, setToken] = useState(null);
   const [favorites, setFavorites] = useState([]);
   const [celebrities, setCelebrities] = useState([]);
@@ -49,7 +39,7 @@ const App = () => {
             setCommunityFavorites={setCommunityFavorites}
           />
         </Route>
-        {/* <Route exact path="/celebrities">
+        <Route exact path="/celebrities">
           <Celebrities
             celebrities={celebrities}
             setCelebrities={setCelebrities}
@@ -57,7 +47,7 @@ const App = () => {
             communityCelebrities={communityCelebrities}
             setCommunityCelebrities={setCommunityCelebrities}
           />
-        </Route> */}
+        </Route>
         {/* <Route exact path="/profile">
           <Profile token={token} />
         </Route> */}
