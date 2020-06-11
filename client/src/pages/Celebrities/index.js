@@ -14,12 +14,12 @@ import axios from "axios";
 import $ from 'jquery';
 import "./style.css";
 
-// const userId = user()._id;
-const userId = 'test'
 
 const Celebrities = ({ celebrities, setCelebrities, token, communityCelebrities, setCommunityCelebrities }) => {
 
   const addFavorite = () => {
+
+    const userId = user()._id;
     const celebName = state.name;
 
     console.log("celebrities: ", celebrities);
@@ -68,7 +68,7 @@ const Celebrities = ({ celebrities, setCelebrities, token, communityCelebrities,
   // Celebrities delete function
 
   function deleteCeleb(celebName) {
-
+    const userId = user()._id;
     const celebList = celebrities.slice();
     const newCelebList = celebList.filter(item => item.celeb_name !== celebName);
     setCelebrities(newCelebList);
