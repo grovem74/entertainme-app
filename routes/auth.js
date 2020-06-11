@@ -42,7 +42,7 @@ router.post("/api/auth/register", function (req, res) {
 
 // Create a router for login or sign-in.
 
-router.post("/api/auth/login", function (req, res) {
+router.post("https://the-entertainme-app.herokuapp.com/api/auth/login", function (req, res) {
   User.findOne(
     {
       username: req.body.username,
